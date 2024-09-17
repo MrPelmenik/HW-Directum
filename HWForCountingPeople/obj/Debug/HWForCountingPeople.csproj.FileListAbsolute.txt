@@ -1,0 +1,7 @@
+E:\Repos for VS\HWForCountingPeople\bin\Debug\HWForCountingPeople.exe.config
+E:\Repos for VS\HWForCountingPeople\bin\Debug\HWForCountingPeople.exe
+E:\Repos for VS\HWForCountingPeople\bin\Debug\HWForCountingPeople.pdb
+E:\Repos for VS\HWForCountingPeople\obj\Debug\HWForCountingPeople.csproj.AssemblyReference.cache
+E:\Repos for VS\HWForCountingPeople\obj\Debug\HWForCountingPeople.csproj.CoreCompileInputs.cache
+E:\Repos for VS\HWForCountingPeople\obj\Debug\HWForCountingPeople.exe
+E:\Repos for VS\HWForCountingPeople\obj\Debug\HWForCountingPeople.pdb
