@@ -37,12 +37,29 @@ namespace HWForCountingPeople
                 {
                     case (1):
                         {
-                            team.AddWorker();
+                            Console.Write("Input name: ");
+                            string name = Console.ReadLine();
+
+                            Console.Write("Input salary: ");
+                            int salary = int.Parse(Console.ReadLine());
+
+                            Console.Write("Chose work place: 1 - Office, 2 - Product: ");
+                            string inputWorkPlace = Console.ReadLine();
+
+                            Console.WriteLine(team.AddWorker(name, salary, inputWorkPlace));
+
                             break;
                         }
                     case (2):
                         {
-                            team.RemoveWorker();
+                            Console.WriteLine("Input person id");
+                            int id = int.Parse(Console.ReadLine());
+
+                            if (team.CheckWorker(id))
+                            {
+                                Console.WriteLine(team.RemoveWorker(id));
+                            }
+
                             break;
                         }
                     case (3):
@@ -57,12 +74,28 @@ namespace HWForCountingPeople
                         }
                     case (5):
                         {
-                            team.ChangeName();
+                            Console.WriteLine("Input person id");
+                            int id = int.Parse(Console.ReadLine());
+                            if (team.CheckWorker(id))
+                            {
+                                Console.Write("Input new name: ");
+                                string name = Console.ReadLine();
+
+                                Console.WriteLine (team.ChangeName(id, name));
+                            }
                             break;
                         }
                     case (6):
                         {
-                            team.ChangeSalary();
+                            Console.WriteLine("Input person id");
+                            int id = int.Parse(Console.ReadLine());
+                            if (team.CheckWorker(id))
+                            {
+                                Console.Write("Input new salary: ");
+                                int salary = int.Parse(Console.ReadLine());
+
+                                Console.WriteLine(team.ChangeSalary(id, salary));
+                            }
                             break;
                         }
                     case (0):

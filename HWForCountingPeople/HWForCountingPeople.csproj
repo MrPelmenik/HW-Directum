@@ -46,8 +46,9 @@
     <Compile Include="WorkerFolder\IWorker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkerFolder\ProductWorker.cs" />
     <Compile Include="WorkerFolder\TeamOperation.cs" />
-    <Compile Include="WorkerFolder\Worker.cs" />
+    <Compile Include="WorkerFolder\OfficeWorker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

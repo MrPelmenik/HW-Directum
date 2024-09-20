@@ -6,10 +6,24 @@ using System.Threading.Tasks;
 
 namespace HWForCountingPeople
 {
+    /// <summary>
+    /// Интерфейс работяга
+    /// </summary>
     internal interface IWorker // Сделаем рабочего и офисника
     {
-        string name { get; set; }
-        string workPlace { get; }
-        int salary { get; set; }
+        /// <summary>
+        /// Имя
+        /// </summary>
+        string Name { get; set; }
+
+        /// <summary>
+        /// Рабочее место
+        /// </summary>
+        string WorkPlace { get; }
+
+        /// <summary>
+        /// Зарплата
+        /// </summary>
+        int Salary { get; set; }
     }
 }

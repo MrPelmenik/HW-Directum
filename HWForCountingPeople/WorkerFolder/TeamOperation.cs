@@ -8,21 +8,27 @@ using System.Xml.Linq;
 
 namespace HWForCountingPeople.WorkerFolder
 {
+    /// <summary>
+    /// Операции с классом Team
+    /// </summary>
     public class TeamOperation
     {
         List<IWorker> workers;
+
         public TeamOperation()
         {
             workers = new List<IWorker>();
         }
-        public void AddWorker()
+
+        /// <summary>
+        /// Добавление работника
+        /// </summary>
+        /// <param name="name">Имя</param>
+        /// <param name="salary">Зарплата</param>
+        /// <param name="input">Место работы. 1-офис, 2-завод</param>
+        /// <returns>Результат добавления работника</returns>
+        public string AddWorker(string name, int salary, string input)
         {
-            Console.Write("Input name: ");
-            string name = Console.ReadLine();
-            Console.Write("Input salary: ");
-            int salary = int.Parse(Console.ReadLine());
-            Console.Write("Chose work place: 1 - Office, 2 - Product: ");
-            string input = Console.ReadLine();
             if (input == "1")
             {
                 IWorker worker = new OfficeWorker(name, salary);
@@ -35,71 +41,95 @@ namespace HWForCountingPeople.WorkerFolder
             }
             else
             {
-                Console.WriteLine("Invalid choice, person didn't added");
+                return "Invalid choice, person didn't added";
             }
-        }
-        public void RemoveWorker()
-        {
-            Console.WriteLine("Input id, to delete person");
-            int id = int.Parse(Console.ReadLine())-1;
-            if (workers.Count < id)
-            {
-                Console.WriteLine("Out of bound");
-                return;
-            }
-            workers.RemoveAt(id);
-        }
-        public void ChangeName()
-        {
-            Console.WriteLine("Input person id");
-            int id = int.Parse(Console.ReadLine());
-            if (workers.Count < id)
-            { 
-                Console.WriteLine("Out of bound");
-                return;
-            }
-            Console.WriteLine($"Old name {workers[id-1].name}");
-            Console.Write("Input new name: ");
-            string name = Console.ReadLine();
-            workers[id-1].name = name;
-            Console.WriteLine("Change complete");
-        }
-        public void ChangeSalary()
-        {
-            Console.WriteLine("Input person id");
-            int id = int.Parse(Console.ReadLine());
-            if (workers.Count < id)
-            {
-                Console.WriteLine("Out of bound");
-                return;
-            }
-            Console.WriteLine($"Old salary {workers[id - 1].salary}");
-            Console.Write("Input new salary: ");
-            int salary = int.Parse(Console.ReadLine());
-            workers[id-1].salary = salary;
-            Console.WriteLine("Change complete");
+            return "Input complete";
         }
 
+        /// <summary>
+        /// Проверить наличие работника
+        /// </summary>
+        /// <param name="id">Идентификатор</param>
+        /// <returns>True-существует, false-не найден</returns>
+        public bool CheckWorker (int id)
+        {
+            if (workers.Count < id)
+            {
+                Console.WriteLine("Not found");
+                return false;
+            }
+            var worker = workers[id-1];
+            Console.WriteLine($"Name:{worker.Name}; Salary:{worker.Salary}; WorkPlace{worker.WorkPlace}");
+            return true;
+        }
+
+        /// <summary>
+        /// Удаление сотрудника
+        /// </summary>
+        /// <param name="id">Идентификатор</param>
+        /// <returns>Удаление успешно</returns>
+        public string RemoveWorker(int id)
+        {
+            workers.RemoveAt(id);
+            return "Worker is deleted";
+        }
+
+        /// <summary>
+        /// Смена имени работяги
+        /// </summary>
+        /// <param name="id">Идентификатор</param>
+        /// <param name="name">Новое имя</param>
+        /// <returns>Смена имени успешна</returns>
+        public string ChangeName(int id, string name)
+        {
+            workers[id-1].Name = name;
+            return "Change complete";
+        }
+
+        /// <summary>
+        /// Смена зарплаты работяги
+        /// </summary>
+        /// <param name="id">Идентификатор</param>
+        /// <param name="salary">Новая ЗП</param>
+        /// <returns>Смена ЗП успешна</returns>
+        public string ChangeSalary(int id, int salary)
+        {
+            workers[id-1].Salary = salary;
+            return "Change complete";
+        }
+
+        /// <summary>
+        /// Показ в консоли данных по пользователям
+        /// </summary>
         public void ShowTeamInfo()
         {
             StringBuilder sb = new StringBuilder();
             int count = 1;
             foreach (var worker in workers)
             {
-                sb.AppendLine($"{count}: Name:{worker.name}, Salary:{worker.salary}, WorkPlace:{worker.workPlace};");
+                sb.AppendLine($"{count}: Name:{worker.Name}, Salary:{worker.Salary}, WorkPlace:{worker.WorkPlace};");
                 count++;
             }
             Console.WriteLine(sb.ToString());
         }
+
+        /// <summary>
+        /// Возвращает инфорамции по зарплатам всех работяг
+        /// </summary>
+        /// <returns>ЗП всех работяг</returns>
         public int GetTeamSalary()
         {
-            int AllSalary = workers.Sum(x => x.salary);
+            int AllSalary = workers.Sum(x => x.Salary);
             return AllSalary;
         }
+
+        /// <summary>
+        /// Возвращает информацию сколько всего работяг
+        /// </summary>
+        /// <returns>Количество работяг</returns>
         public int GetPersonCount()
         {
             return workers.Count;
         }
     }
-
 }
