@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "E:\\Repos for VS\\HW-Directum\\HWForCountingPeople\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{08176DAE-014A-46C3-885D-ADB381D6F7A6}|HWForCountingPeople.csproj|E:\\Repos for VS\\HW-Directum\\HWForCountingPeople\\workerfolder\\teamoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08176DAE-014A-46C3-885D-ADB381D6F7A6}|HWForCountingPeople.csproj|solutionrelative:workerfolder\\teamoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{08176DAE-014A-46C3-885D-ADB381D6F7A6}|HWForCountingPeople.csproj|e:\\repos for vs\\hw-directum\\hwforcountingpeople\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08176DAE-014A-46C3-885D-ADB381D6F7A6}|HWForCountingPeople.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08176DAE-014A-46C3-885D-ADB381D6F7A6}|HWForCountingPeople.csproj|e:\\repos for vs\\hw-directum\\hwforcountingpeople\\workerfolder\\productworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{08176DAE-014A-46C3-885D-ADB381D6F7A6}|HWForCountingPeople.csproj|E:\\Repos for VS\\HW-Directum\\HWForCountingPeople\\workerfolder\\productworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08176DAE-014A-46C3-885D-ADB381D6F7A6}|HWForCountingPeople.csproj|solutionrelative:workerfolder\\productworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08176DAE-014A-46C3-885D-ADB381D6F7A6}|HWForCountingPeople.csproj|E:\\Repos for VS\\HW-Directum\\HWForCountingPeople\\workerfolder\\teamoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08176DAE-014A-46C3-885D-ADB381D6F7A6}|HWForCountingPeople.csproj|solutionrelative:workerfolder\\teamoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08176DAE-014A-46C3-885D-ADB381D6F7A6}|HWForCountingPeople.csproj|E:\\Repos for VS\\HW-Directum\\HWForCountingPeople\\workerfolder\\iworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -38,12 +38,11 @@
               "RelativeToolTip": "WorkerFolder\\IWorker.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T17:06:21.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T17:06:21.466Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ProductWorker.cs",
               "DocumentMoniker": "E:\\Repos for VS\\HW-Directum\\HWForCountingPeople\\WorkerFolder\\ProductWorker.cs",
               "RelativeDocumentMoniker": "WorkerFolder\\ProductWorker.cs",
@@ -51,12 +50,11 @@
               "RelativeToolTip": "WorkerFolder\\ProductWorker.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T15:27:47.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-20T15:27:47.104Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "TeamOperation.cs",
               "DocumentMoniker": "E:\\Repos for VS\\HW-Directum\\HWForCountingPeople\\WorkerFolder\\TeamOperation.cs",
               "RelativeDocumentMoniker": "WorkerFolder\\TeamOperation.cs",
@@ -69,13 +67,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Repos for VS\\HW-Directum\\HWForCountingPeople\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\Repos for VS\\HW-Directum\\HWForCountingPeople\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-16T17:03:21.015Z",
               "EditorCaption": ""
