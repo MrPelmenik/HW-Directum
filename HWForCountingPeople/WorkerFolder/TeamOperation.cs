@@ -9,7 +9,7 @@ using System.Xml.Linq;
 namespace HWForCountingPeople.WorkerFolder
 {
     /// <summary>
-    /// Операции с классом Team
+    /// Операции с классом Team.
     /// </summary>
     public class TeamOperation
     {
@@ -21,12 +21,12 @@ namespace HWForCountingPeople.WorkerFolder
         }
 
         /// <summary>
-        /// Добавление работника
+        /// Добавление работника.
         /// </summary>
-        /// <param name="name">Имя</param>
-        /// <param name="salary">Зарплата</param>
-        /// <param name="input">Место работы. 1-офис, 2-завод</param>
-        /// <returns>Результат добавления работника</returns>
+        /// <param name="name">Имя.</param>
+        /// <param name="salary">Зарплата.</param>
+        /// <param name="input">Место работы. 1-офис, 2-завод.</param>
+        /// <returns>Результат добавления работника.</returns>
         public string AddWorker(string name, int salary, string input)
         {
             if (input == "1")
@@ -47,10 +47,10 @@ namespace HWForCountingPeople.WorkerFolder
         }
 
         /// <summary>
-        /// Проверить наличие работника
+        /// Проверить наличие работника.
         /// </summary>
-        /// <param name="id">Идентификатор</param>
-        /// <returns>True-существует, false-не найден</returns>
+        /// <param name="id">Идентификатор.</param>
+        /// <returns>True-существует, false-не найден.</returns>
         public bool CheckWorker (int id)
         {
             if (workers.Count < id)
@@ -64,10 +64,10 @@ namespace HWForCountingPeople.WorkerFolder
         }
 
         /// <summary>
-        /// Удаление сотрудника
+        /// Удаление сотрудника.
         /// </summary>
-        /// <param name="id">Идентификатор</param>
-        /// <returns>Удаление успешно</returns>
+        /// <param name="id">Идентификатор.</param>
+        /// <returns>Удаление успешно.</returns>
         public string RemoveWorker(int id)
         {
             workers.RemoveAt(id);
@@ -75,11 +75,11 @@ namespace HWForCountingPeople.WorkerFolder
         }
 
         /// <summary>
-        /// Смена имени работяги
+        /// Смена имени работяги.
         /// </summary>
-        /// <param name="id">Идентификатор</param>
-        /// <param name="name">Новое имя</param>
-        /// <returns>Смена имени успешна</returns>
+        /// <param name="id">Идентификатор.</param>
+        /// <param name="name">Новое имя.</param>
+        /// <returns>Смена имени успешна.</returns>
         public string ChangeName(int id, string name)
         {
             workers[id-1].Name = name;
@@ -87,11 +87,11 @@ namespace HWForCountingPeople.WorkerFolder
         }
 
         /// <summary>
-        /// Смена зарплаты работяги
+        /// Смена зарплаты работяги.
         /// </summary>
-        /// <param name="id">Идентификатор</param>
-        /// <param name="salary">Новая ЗП</param>
-        /// <returns>Смена ЗП успешна</returns>
+        /// <param name="id">Идентификатор.</param>
+        /// <param name="salary">Новая ЗП.</param>
+        /// <returns>Смена ЗП успешна.</returns>
         public string ChangeSalary(int id, int salary)
         {
             workers[id-1].Salary = salary;
@@ -99,7 +99,7 @@ namespace HWForCountingPeople.WorkerFolder
         }
 
         /// <summary>
-        /// Показ в консоли данных по пользователям
+        /// Показ в консоли данных по пользователям.
         /// </summary>
         public void ShowTeamInfo()
         {
@@ -114,9 +114,9 @@ namespace HWForCountingPeople.WorkerFolder
         }
 
         /// <summary>
-        /// Возвращает инфорамции по зарплатам всех работяг
+        /// Возвращает инфорамции по зарплатам всех работяг.
         /// </summary>
-        /// <returns>ЗП всех работяг</returns>
+        /// <returns>ЗП всех работяг.</returns>
         public int GetTeamSalary()
         {
             int AllSalary = workers.Sum(x => x.Salary);
@@ -124,9 +124,9 @@ namespace HWForCountingPeople.WorkerFolder
         }
 
         /// <summary>
-        /// Возвращает информацию сколько всего работяг
+        /// Возвращает информацию сколько всего работяг.
         /// </summary>
-        /// <returns>Количество работяг</returns>
+        /// <returns>Количество работяг.</returns>
         public int GetPersonCount()
         {
             return workers.Count;

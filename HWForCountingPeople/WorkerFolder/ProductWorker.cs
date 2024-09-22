@@ -1,11 +1,11 @@
 ﻿namespace HWForCountingPeople.Worker
 {
     /// <summary>
-    /// Заводчанин
+    /// Заводчанин.
     /// </summary>
     public class ProductWorker : IWorker
     {
-        #region Свойства
+        #region IWorker
 
         public string Name { get; set; }
 

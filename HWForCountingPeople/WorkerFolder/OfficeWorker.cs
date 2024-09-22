@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 namespace HWForCountingPeople.Worker
 {
     /// <summary>
-    /// Офисник
+    /// Офисник.
     /// </summary>
     public class OfficeWorker : IWorker
     {
-        #region Свойства
+        #region IWorker
 
         public string Name { get; set; }
 

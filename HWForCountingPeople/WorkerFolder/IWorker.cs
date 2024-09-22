@@ -7,22 +7,22 @@ using System.Threading.Tasks;
 namespace HWForCountingPeople
 {
     /// <summary>
-    /// Интерфейс работяга
+    /// Работяга.
     /// </summary>
-    internal interface IWorker // Сделаем рабочего и офисника
+    internal interface IWorker
     {
         /// <summary>
-        /// Имя
+        /// Имя.
         /// </summary>
         string Name { get; set; }
 
         /// <summary>
-        /// Рабочее место
+        /// Рабочее место.
         /// </summary>
         string WorkPlace { get; }
 
         /// <summary>
-        /// Зарплата
+        /// Зарплата.
         /// </summary>
         int Salary { get; set; }
     }
