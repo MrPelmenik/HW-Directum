@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{08176DAE-014A-46C3-885D-ADB381D6F7A6}</ProjectGuid>
+    <ProjectGuid>{F3AAE631-ECED-4665-84D1-C8F48475D69F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HWForCountingPeople</RootNamespace>
-    <AssemblyName>HWForCountingPeople</AssemblyName>
+    <RootNamespace>HW_With_Exeption</RootNamespace>
+    <AssemblyName>HW-With-Exeption</AssemblyName>
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="WorkerFolder\IWorker.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="PersonsOperations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WorkerFolder\ProductWorker.cs" />
-    <Compile Include="WorkerFolder\TeamOperation.cs" />
-    <Compile Include="WorkerFolder\OfficeWorker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

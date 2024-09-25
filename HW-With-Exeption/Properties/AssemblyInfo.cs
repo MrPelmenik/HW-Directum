@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанные с этой сборкой.
-[assembly: AssemblyTitle("HWForCountingPeople")]
+[assembly: AssemblyTitle("HW-With-Exeption")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("HWForCountingPeople")]
+[assembly: AssemblyProduct("HW-With-Exeption")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID представляет идентификатор typelib, если этот проект доступен из модели COM
-[assembly: Guid("08176dae-014a-46c3-885d-adb381d6f7a6")]
+[assembly: Guid("f3aae631-eced-4665-84d1-c8f48475d69f")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //
