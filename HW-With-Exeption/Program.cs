@@ -24,7 +24,7 @@ namespace HW_With_Exeption
         {
             Console.WriteLine("Programm begin");
 
-            PersonsOperations persons = new PersonsOperations();
+            PeopleManager persons = new PeopleManager();
             while (true)
             {
                 ShowMenu();
@@ -39,7 +39,7 @@ namespace HW_With_Exeption
                                 Console.Write("Input name: ");
                                 string name = Console.ReadLine();
 
-                                Console.WriteLine(persons.AddPerson(name));
+                                persons.AddPerson(name);
                                 break;
                             }
                         case (2):
@@ -47,12 +47,12 @@ namespace HW_With_Exeption
                                 Console.WriteLine("Input person id");
                                 int id = int.Parse(Console.ReadLine());
 
-                                Console.WriteLine(persons.RemovePerson(id - 1));
+                                persons.RemovePerson(id - 1);
                                 break;
                             }
                         case (3):
                             {
-                                persons.ShowInfo();
+                                Console.WriteLine( persons.ShowInfo());
                                 break;
                             }
                         case (0):
